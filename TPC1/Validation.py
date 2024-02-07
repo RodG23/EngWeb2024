@@ -1,16 +1,5 @@
-import xml.etree.ElementTree
 from lxml import etree
 import os
-
-# tree = xml.etree.ElementTree.parse('./MapaRuas-materialBase/texto/MRB-01-RuaDoCampo.xml')
-# root = tree.getroot()
-
-# for child in root:
-#     print('Tag:', child.tag)
-#     for child2 in child:
-#         print('Tag:', child2.tag)
-
-# 25 27 30 43 44 
 
 def validate_xml(xml, xsd):
     xsd_file = etree.parse(xsd)
