@@ -1,13 +1,15 @@
 # Erros detetados e respetivas alterações
 
 ## Ficheiro xml da Rua número 25:
-- O atributo de um elemento do tipo entidade tem o nome de 'tipo', não 'entidade'. Assim sendo, o correto é, por exemplo, '<endidade tipo="pessoa"> ... </entidade>' e não '<endidade entidade="pessoa"> ... </entidade>'.
+- O atributo de um elemento do tipo entidade tem o nome de 'tipo', não 'entidade'. Assim sendo, o correto é, por exemplo, 'endidade tipo="pessoa"  e não 'endidade entidade="pessoa" .
 
 ## Ficheiro xml da Rua número 27:
-- O atributo de um elemento do tipo entidade tem o nome de 'tipo', não 'entidade'. Assim sendo, o correto é, por exemplo, '<endidade tipo="pessoa"> ... </entidade>' e não '<endidade entidade="pessoa"> ... </entidade>'.
+- O atributo de um elemento do tipo entidade tem o nome de 'tipo', não 'entidade'. Assim sendo, o correto é, por exemplo, 'endidade tipo="pessoa"  e não 'endidade entidade="pessoa" .
+
 
 ## Ficheiro xml da Rua número 30:
-- O atributo de um elemento do tipo entidade tem o nome de 'tipo', não 'entidade'. Assim sendo, o correto é, por exemplo, '<endidade tipo="pessoa"> ... </entidade>' e não '<endidade entidade="pessoa"> ... </entidade>'.
+- O atributo de um elemento do tipo entidade tem o nome de 'tipo', não 'entidade'. Assim sendo, o correto é, por exemplo, 'endidade tipo="pessoa"  e não 'endidade entidade="pessoa" .
+
 
 ## Ficheiro xml da Rua número 43:
 - Os elementos de uma casa devem aparecer em sequência, do seguinte modo: número (obrigatório), efiteuta(opcional), foro(opcional), desc(opcional), vista(opcional).
