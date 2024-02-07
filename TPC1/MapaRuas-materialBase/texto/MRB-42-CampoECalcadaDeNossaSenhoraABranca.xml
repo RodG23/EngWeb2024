@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rua xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="file:/C:/Users/micas/Desktop/Maria/Uminho/4%C2%BAano/1%C2%BAsemestre/publicacao_eletronica/Trabalho%20Final/MRB-rua.xsd">
+    xsi:noNamespaceSchemaLocation="C:/Users/Utilizador/Desktop/UM/EngWeb2024/TPC1/MapaRuas-materialBase/MRB-rua.xsd">
     <meta>
         <número>42</número>
         <nome>Campo e Calçada de Nossa Senhora a Branca</nome>

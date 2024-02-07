@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rua xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="file:/C:/Users/tiago/OneDrive/Documents/workspace_xml/trabalhofinal/MRB-rua.xsd">
+    xsi:noNamespaceSchemaLocation="C:/Users/Utilizador/Desktop/UM/EngWeb2024/TPC1/MapaRuas-materialBase/MRB-rua.xsd">
     <meta>
         <número>33</número>
         <nome>Campo de S. Tiago</nome>

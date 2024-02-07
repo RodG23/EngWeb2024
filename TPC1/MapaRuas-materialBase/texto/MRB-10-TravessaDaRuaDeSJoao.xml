@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rua xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="file:/Users/Francisca/Desktop/4Ano/Publica%C3%A7%C3%A3o_Eletr%C3%B3nica/Projeto%20Final/MRB-rua.xsd">
+    xsi:noNamespaceSchemaLocation="C:/Users/Utilizador/Desktop/UM/EngWeb2024/TPC1/MapaRuas-materialBase/MRB-rua.xsd">
     <meta>
         <número>10</número>
         <nome>Travessa da Rua de S. João para a do Forno</nome>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rua xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="MRB-rua.xsd">
+    xsi:noNamespaceSchemaLocation="C:/Users/Utilizador/Desktop/UM/EngWeb2024/TPC1/MapaRuas-materialBase/MRB-rua.xsd">
     <meta>
         <número>11</número>
         <nome>Rua dos Cegos ou do Forno</nome>

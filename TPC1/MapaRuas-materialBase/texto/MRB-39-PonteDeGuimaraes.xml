@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rua xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<rua xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="C:/Users/Utilizador/Desktop/UM/EngWeb2024/TPC1/MapaRuas-materialBase/MRB-rua.xsd">
     <meta>
         <número>39</número>
         <nome>Ponte de Guimarães</nome>
