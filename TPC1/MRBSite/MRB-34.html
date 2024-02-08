@@ -15,14 +15,22 @@
         </div>
 
         <div class="w3-bar w3-blue-gray">
-        <button class="w3-bar-item w3-button" onclick="openTab('London')">Imagens - Atualidade</button>
-        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens - Esquiços</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Atual')">Imagens</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens</button>
         <button class="w3-bar-item w3-button" onclick="openTab('Tokyo')">Descrição</button>
         </div>
 
-        <div id="London" class="w3-container city">
-        <h2>London</h2>
-        <p>London is the capital city of England.</p>
+        <div id="Atual" class="w3-container city">
+        <h2>Imagens</h2>
+    
+            <img src=/home/rod/Desktop/EngWeb2024/TPC1/MapaRuas-materialBase/texto/../imagem/MRB-34-QuingostaDasCruzes-primeira.jpg class="w3-round-large" alt=MRB-34-a style="width:100%">
+            <p>Quingosta das Cruzes - Norte. </p>
+            <br>
+        
+            <img src=/home/rod/Desktop/EngWeb2024/TPC1/MapaRuas-materialBase/texto/../imagem/MRB-34-QuingostaDasCruzes-segunda.jpg class="w3-round-large" alt=MRB-34-b style="width:100%">
+            <p>Quingosta das Cruzes - Sul. </p>
+            <br>
+        
         </div>
 
         <div id="Paris" class="w3-container city" style="display:none">
@@ -31,18 +39,18 @@
         </div>
 
         <div id="Tokyo" class="w3-container city" style="display:none">
-        <p>[{'para': '            De características bem rurais ligava o Campo de S. Tiago com a fachada latera Poente do hospital de S. Marcos.        '}, {'para': '            Não se conhecendo dados sobre a sua história, podemos apenas dizer que em 1750 estava só parcialmente construída, com casas simples, de 2 pisos, muitas delas com janelas de tipo bracarense. Um correr de habitações do tipo de porta com janela ao lado, no piso térreo (prazos 7 a 13), bem como a casa grande, mas de características rurais, virada ao campo de S. Tiago, são as peças de arquitectura desta rua, ainda hoje, bem secundária e, também, com muitos poucos edifícios a ladeá-la.        '}, {'para': '            Das 17 casas ao lado Norte e 9 do lado Sul, eram prazos do Cabido 5 e 8 respectivamente.        '}, {'para': '            Não sabemos a razão porque esta Cangosta foi conhecida pelo nomes das «Cruzes», nem sabemos qual a data em que passou a ser conhecida pelo nome actual, «Falcões», embora em 1857 já assim apareça designada. Essa designação deverá ser mais antiga e provém, sem dúvida, do nome da família Falcões Cota cujo palácio existente no Campo de S. Tiago tinha a envolvê-lo terrenos desta rua, os que estão a Oeste do prazo nº 13.        '}, {'para': '            Porta de serventia do nº 20 da Rua do Anjo.        '}, {'para': '            Pertence ao nº 17 da Rua do Anjo.        '}, {'para': '            Porta de serventia do nº 15 da Rua do Anjo.        '}, {'para': '            Pertence ao nº 14 da Rua do Anjo.        '}, {'para': '            Pertence ao nº 13 da Rua do Anjo.        '}, {'para': '            Confronta, do norte, com casa foreira ao Hospital de S. Marcos.        '}, {'para': '            Leira denominada Castelo Rodrigo, pertencente ao quintal de uma casa dízima a Deus.         '}, {'para': '            Os subenfiteutas pagam foro ao nº 1 do Campo de Santiago.        '}]</p>
+        <p></p>
         </div>
 
         <script>
-        function openTab(cityName) {
+        function openTab(cityName) {{
         var i;
         var x = document.getElementsByClassName("city");
-        for (i = 0; i < x.length; i++) {
+        for (i = 0; i < x.length; i++) {{
             x[i].style.display = "none";  
-        }
+        }}
         document.getElementById(cityName).style.display = "block";  
-        }
+        }}
         </script>
 
     </body>

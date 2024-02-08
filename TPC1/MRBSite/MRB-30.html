@@ -15,14 +15,22 @@
         </div>
 
         <div class="w3-bar w3-blue-gray">
-        <button class="w3-bar-item w3-button" onclick="openTab('London')">Imagens - Atualidade</button>
-        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens - Esquiços</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Atual')">Imagens</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens</button>
         <button class="w3-bar-item w3-button" onclick="openTab('Tokyo')">Descrição</button>
         </div>
 
-        <div id="London" class="w3-container city">
-        <h2>London</h2>
-        <p>London is the capital city of England.</p>
+        <div id="Atual" class="w3-container city">
+        <h2>Imagens</h2>
+    
+            <img src=/home/rod/Desktop/EngWeb2024/TPC1/MapaRuas-materialBase/texto/../imagem/MRB-30-CangostaDeSSbebastiao-Norte.png class="w3-round-large" alt=MRB-30-norte style="width:100%">
+            <p>Cangosta De S. Sebastião - norte </p>
+            <br>
+        
+            <img src=/home/rod/Desktop/EngWeb2024/TPC1/MapaRuas-materialBase/texto/../imagem/MRB-30-CangostaDeSSbebastiao-Sul.png class="w3-round-large" alt=MRB-30-sul style="width:100%">
+            <p>Cangosta De S. Sebastião - sul </p>
+            <br>
+        
         </div>
 
         <div id="Paris" class="w3-container city" style="display:none">
@@ -31,18 +39,18 @@
         </div>
 
         <div id="Tokyo" class="w3-container city" style="display:none">
-        <p>[{'para': '            Longa rua extra-muros que descia toda a colina da Cividade, desde o Terreiro de S. Sebastião (onde estava a capela de S.Sebastião das Carvalheiras) até à do Beco.        '}, {'para': '            Decalcando talvez o cardo da cidade romana, e embora não conste no Tombo do Cabido ( datável de 1369-1380), esta rua já existia na Idade Média            pois era uma das duas vias de ligação da cidade intra-muros com a igreja paroquial de Maximinos.        '}, {'para': '            Recebendo o nome de S. Sebastião por no seu topo estar a capela do santo da mesma invocação, de data de fundação desconhecida, esta rua só nos finais da            década de setenta do nosso século perdeu o ar rual que ostentava em 1750.        '}, {'para': '            No Mappa, a rua era cosntítuida por casas de pedra, na sua grande maioria de um piso, muito simples, sendo 36% do tipo de porta/janela. Tinha            vários portões que davam acesso directo a campos de cultivo, bem vísiveis atrás de muros que faceavam a rua , ou atrás das habitações.        '}, {'para': '            Das 25 casas do lado Norte e 24 do Sul, eram prazos do Cabido 20 casas do lado Norte.        '}, {'para': '            Mantém hoje o topónimo de S. Sebastião embora também seja conehcida por rua dos Marchantes.        '}, {'para': '            Pertencem ao n.º 38 da Rua do Arrabalde da Cruz da Pedra, para onde tem a frontaria e serventia pricnipais.        '}, {'para': '            Pagam foro ao n.º 20 da Rua do Arrabalde da Cruz de Pedra. Os n.º4 a 8 foram integrados na            escritura do prazo n.º 3.        '}, {'para': '            Pertence ao n.º 36 da Rua do Arrabalde da Cruz da Pedra, a qual, está integrada no prazo da casa n.º 20, da mesma rua.        '}, {'para': '            Pagam foro ao n.º 20 da Rua do Arrabalde da Cruz de Pedra.        '}, {'para': '             Portal de serventia da casa n.º 33 do Arrabalde da Cruz de Pedra.        '}, {'para': '            Casas que pagam foro ao n.º 20 da Rua do Arrabalde da Cruz da Pedra.        '}, {'para': '            Casa e portal de serventia do n.º 28 da Rua do Arrabalde da Cruz da Pedra.        '}, {'para': '            Corresponde a três casas que pagam foro ao n.º 20 da Rua da Cruz da Pedra.        '}, {'para': '            Portal de serventia do campo da casa n.º 20 da Rua do Arrabalde de Cruz da Pedra. Confronta, do nascente, com casa             pertencente à propriedade, denominada, «O Bispo».        '}]</p>
+        <p></p>
         </div>
 
         <script>
-        function openTab(cityName) {
+        function openTab(cityName) {{
         var i;
         var x = document.getElementsByClassName("city");
-        for (i = 0; i < x.length; i++) {
+        for (i = 0; i < x.length; i++) {{
             x[i].style.display = "none";  
-        }
+        }}
         document.getElementById(cityName).style.display = "block";  
-        }
+        }}
         </script>
 
     </body>

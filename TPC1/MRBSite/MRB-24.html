@@ -15,14 +15,22 @@
         </div>
 
         <div class="w3-bar w3-blue-gray">
-        <button class="w3-bar-item w3-button" onclick="openTab('London')">Imagens - Atualidade</button>
-        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens - Esquiços</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Atual')">Imagens</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens</button>
         <button class="w3-bar-item w3-button" onclick="openTab('Tokyo')">Descrição</button>
         </div>
 
-        <div id="London" class="w3-container city">
-        <h2>London</h2>
-        <p>London is the capital city of England.</p>
+        <div id="Atual" class="w3-container city">
+        <h2>Imagens</h2>
+    
+            <img src=/home/rod/Desktop/EngWeb2024/TPC1/MapaRuas-materialBase/texto/../imagem/MRB-24-RuaDaVielinha-nascente.jpg class="w3-round-large" alt=MRB-24-nascente style="width:100%">
+            <p>Rua da Vielinha - nascente. </p>
+            <br>
+        
+            <img src=/home/rod/Desktop/EngWeb2024/TPC1/MapaRuas-materialBase/texto/../imagem/MRB-24-RuaDaVielinha-poente.jpg class="w3-round-large" alt=MRB-24-poente style="width:100%">
+            <p>Rua da Vielinha - poente. </p>
+            <br>
+        
         </div>
 
         <div id="Paris" class="w3-container city" style="display:none">
@@ -31,18 +39,18 @@
         </div>
 
         <div id="Tokyo" class="w3-container city" style="display:none">
-        <p>[{'para': 'Pequena e estreitíssima artéria que ligava a Rua de Maximinos com o            rexio da Praça.'}, {'para': 'Acompanhando a muralha que a faceia parcialmente, tem o prazo do Cabido mais antigo,            com data de 1515.'}, {'para': 'Com uma configuração esquisita, tinha em 1750 as casas do lado Poente,            que escontavam à muralha, de bastante boa qualidade, havendo em 4 delas varandas (de            madeira?) e gelosias. Com excepção de uma, todas eram sobradadas.'}, {'para': 'Quase insólita é a existência de uma capela, sobre as casas, talvez até sobre a            muralha, e sensivelmente a meio da rua, de que não conhecemos nenhuma referência            escrita.'}, {'para': 'Do lado Nascente, as casas são de diferentes pisos, com bastante mau desenho de            fachada; as janelas eram tapadas por portadas de madeira. Há uma, porém, com um desenho            estranhíssimo e com uma linha de empena extremamente irregular.'}, {'para': 'A meio deste lado havia um pequeno beco que levava a uma casa.'}, {'para': 'Penso ser a designação de Vielinha bastante mais correcta que a actual de Violinha,            que, aliás, deve ter origem no topónimo antigo.'}, {'para': 'Das 8 casas do lado Nascente e 7 do Poente, eram prazos do Cabido 6 do            Nascente.'}, {'para': 'Foi pertença do n.º 15 da Rua dos Sapateiros.'}, {'para': 'Esta casa pertence à obra da Sé, a quem os herdeiros de Domingos de Araújo, caminheiro, e sua mulher,    Catarina Gonçalves, lhe pagam de foro            80 reis. Esteve integrada no prazo de uma casa da            Rua dos Sapateiros.'}, {'para': 'Pertenceu ao n.º 15 da Rua dos Sapateiros.'}, {'para': 'Encontra-se subemprazada aos herdeiros de Manuel    Coelho de Araújo, tratante, e sua mulher, Maria da Costa. Faz parte do prazo da casa n.º            12, da Rua dos Sapateiros, à qual paga de foro 2000            reis.'}, {'para': 'Corresponde a duas casas pequenas, situadas na «agiela» da            Rua da Vielinha, da parte norte.'}, {'para': 'Corresponde ao n.º 13 da Rua dos Sapateiros.'}, {'para': 'Confronta, do norte, com a agiela da Rua da Vielinha e, do            sul, com parte da casa n.º 18 da Rua de Maximinos.'}, {'para': 'Corresponde ao n.º 18 da Rua de Maximinos, para onde tem a            frontaria e serventia principais.'}]</p>
+        <p></p>
         </div>
 
         <script>
-        function openTab(cityName) {
+        function openTab(cityName) {{
         var i;
         var x = document.getElementsByClassName("city");
-        for (i = 0; i < x.length; i++) {
+        for (i = 0; i < x.length; i++) {{
             x[i].style.display = "none";  
-        }
+        }}
         document.getElementById(cityName).style.display = "block";  
-        }
+        }}
         </script>
 
     </body>

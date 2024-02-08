@@ -15,14 +15,22 @@
         </div>
 
         <div class="w3-bar w3-blue-gray">
-        <button class="w3-bar-item w3-button" onclick="openTab('London')">Imagens - Atualidade</button>
-        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens - Esquiços</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Atual')">Imagens</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens</button>
         <button class="w3-bar-item w3-button" onclick="openTab('Tokyo')">Descrição</button>
         </div>
 
-        <div id="London" class="w3-container city">
-        <h2>London</h2>
-        <p>London is the capital city of England.</p>
+        <div id="Atual" class="w3-container city">
+        <h2>Imagens</h2>
+    
+            <img src=/home/rod/Desktop/EngWeb2024/TPC1/MapaRuas-materialBase/texto/../imagem/MRB-12-TravessaDaRuaDoFornoParaADoPoco-Norte.jpg class="w3-round-large" alt=MRB-12-norte style="width:100%">
+            <p>Travessa Da Rua Do Forno Para A Do Poço - vista norte. </p>
+            <br>
+        
+            <img src=/home/rod/Desktop/EngWeb2024/TPC1/MapaRuas-materialBase/texto/../imagem/MRB-12-TravessaDaRuaDoFornoParaADoPoco-Sul.jpg class="w3-round-large" alt=MRB-12-sul style="width:100%">
+            <p>Travessa Da Rua Do Forno Para A Do Poço - vista sul. </p>
+            <br>
+        
         </div>
 
         <div id="Paris" class="w3-container city" style="display:none">
@@ -31,18 +39,18 @@
         </div>
 
         <div id="Tokyo" class="w3-container city" style="display:none">
-        <p>[{'para': '            Mais um fragmento da grande rua das Travessas, espinha dorsal do velho bairro medieval e que decalca uma velha rua romana.        '}, {'para': '            Com construções de desigual desenho de fachada e características, esta é mais uma artéria que, lentamente, também foi perdendo a sua importância até aos finais do séc. XIX.        '}, {'para': '            Em 1892 foi consideravelmente alargada, sendo destruídos todos os seus prédios, embora a linha de fachadas do lado Sul se tivesse mantido.        '}, {'para': '            Hoje conservam-se apenas alguns pormenores da casa do prazo n.º 5, que era um belo edifício gótico e com pedra de armas: e onde, parece terem vivido familiares de João de Barros, autor da «Geografia de Entre Douro e Minho».        '}, {'para': '            Extremamente curiosa é, também, a casa do prazo n.° 6. Com portão e janelas renascentistas, organiza-se em diferentes pisos, ligados por um muro oblíquo, descendo para o canto da rua. Sobre essa parte do edifício, tem um acréscimo, empoleirado, fazendo lembrar a arquitectura japonesa.        '}, {'para': '            Das 8 casas do lado Norte e 9 do lado Sul, são 4 e 6, respectivamente, prazos do Cabido.        '}, {'para': '            Hoje esta travessa é um troço na rua D. Afonso Henriques situado entre a rua do Forno e a rua D. Gonçalo Pereira.        '}, {'para': 'A casa n° 1 confronta, do nascente, com a Rua do Forno. Fazem parte deste prazo os n° 15. 16, 17, 18 e 19, da Rua do Forno ou dos Cegos. A casa n° 16 é foreira ao chantrado e paga de censo ao cabido 2 maravedis, ou seja. 54 reis.'}, {'para': 'A casa n° 1 confronta, do nascente, com a Rua do Forno. Fazem parte deste prazo os n° 15. 16, 17, 18 e 19, da Rua do Forno ou dos Cegos. A casa n° 16 é foreira ao chantrado e paga de censo ao cabido 2 maravedis, ou seja. 54 reis.'}, {'para': '            A casa n° 3 confronta, do sul, com a Rua dos Palhais e,foi unida ao n° 4 em 1622. A casa n.º 4 foi deixada ao cabido pelo arcediago de Vermoim. Francisco Fernandes, com encargo de um aniversário de três lições.        '}, {'para': '            A casa n° 3 confronta, do sul, com a Rua dos Palhais e,foi unida ao n° 4 em 1622. A casa n.º 4 foi deixada ao cabido pelo arcediago de Vermoim. Francisco Fernandes, com encargo de um aniversário de três lições.        '}, {'para': '            É foreira ao morgado de Real. O censo é pago por Lopo de Barros de Almeida.        '}, {'para': '            Situa-se na esquina da Rua do Poço e            confronta, do sul, com a casa n° 17 da dita rua. Pertence a este prazo o n.º 16, da Rua de Santa Maria ou do Poço.        '}, {'para': '            Ao prazo n.º 7 foram unidos, em 1561, dois ênxidos que se separaram dos n.º 13 e 14 da Rua do Poço e, em 1677. as casas dos referidos n.ºs.          '}, {'para': '            Corresponde ao n.° 2 da Rua Pequena.         '}, {'para': 'Confronta, do nascente, com casa foreira à cororaria.'}, {'para': '            Corresponde ao n.º 20 da Rua do Forno, para onde tem a frontaria e serventia principais. Confronta, do poente, com casa foreira à cororaria.           '}]</p>
+        <p></p>
         </div>
 
         <script>
-        function openTab(cityName) {
+        function openTab(cityName) {{
         var i;
         var x = document.getElementsByClassName("city");
-        for (i = 0; i < x.length; i++) {
+        for (i = 0; i < x.length; i++) {{
             x[i].style.display = "none";  
-        }
+        }}
         document.getElementById(cityName).style.display = "block";  
-        }
+        }}
         </script>
 
     </body>

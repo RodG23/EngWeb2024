@@ -15,14 +15,18 @@
         </div>
 
         <div class="w3-bar w3-blue-gray">
-        <button class="w3-bar-item w3-button" onclick="openTab('London')">Imagens - Atualidade</button>
-        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens - Esquiços</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Atual')">Imagens</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens</button>
         <button class="w3-bar-item w3-button" onclick="openTab('Tokyo')">Descrição</button>
         </div>
 
-        <div id="London" class="w3-container city">
-        <h2>London</h2>
-        <p>London is the capital city of England.</p>
+        <div id="Atual" class="w3-container city">
+        <h2>Imagens</h2>
+    
+            <img src=/home/rod/Desktop/EngWeb2024/TPC1/MapaRuas-materialBase/texto/../imagem/MRB-31-DoAlcaide-Sul.png class="w3-round-large" alt=MRB-31-sul style="width:100%">
+            <p>Rua do Alcaide - Sul. </p>
+            <br>
+        
         </div>
 
         <div id="Paris" class="w3-container city" style="display:none">
@@ -31,18 +35,18 @@
         </div>
 
         <div id="Tokyo" class="w3-container city" style="display:none">
-        <p>[{'para': '            Construída em volta da parte sul da muralha medieval, ligava o campo de S.Tiago            com o Terreiro de S.Sebastião.        '}, {'para': '            Começada a construir talvez no tempo de D.Diogo de Sousa, tinha,            em 1750, boas casas de granito, com uma grande fachada, de 2 pisos, molduras de pedras nas portas e janelas do 1º piso e filetes de pedra sobre as janelas bracarenses do andar principal.            Curiosamente não se vêem casas com brasões, embora tivessem, com toda a certeza, vivido aqui membros            de famílias nobres. A sua própria designação, do Alcaide, aponta para isso.        '}, {'para': '            Até hoje pouco se alterou, tendo só desaparecido as casas dos prazos 19 a 21. O seu nome também se manteve.        '}, {'para': '            O lado Norte não está desenhado porque as habitações que encostavam à muralha deveriam ser prazos da            Câmara.        '}, {'para': '            As 18 casas que apresentam são todas prazos do Cabido.        '}, {'para': '            Pertencem ao nº38 da Rua do Arrabalde da Cruz da Pedra, para onde tem             frontaria e serventia principais.        '}, {'para': '            Pagam foro ao nº20 da Rua do Arrabalde da Cruz da Pedra. Os nº 4 a 8            foram integrados na escritura do prazo nº3.        '}, {'para': '            Pertence ao nº36 da Rua do Arrabalde da Cruz da Pedra, a qual está integrada             no prazo da casa nº20, da mesma rua.        '}, {'para': '            Paga foro ao nº20 da Rua do Arrabalde da Cruz da Pedra.        '}, {'para': '            Portal de serventia da casa nº33 do Arrabalde da Cruz da Pedra.        '}, {'para': '            Casas que pagam foro ao nº20 da Rua do Arrabalde da Cruz da Pedra        '}, {'para': '            Casa e portal de serventia do nº28 da Rua do Arrabalde da Cruz da Pedra.        '}, {'para': '            Corresponde a três casas que pagam foro ao nº 20 da Rua da Cruz da Pedra.        '}, {'para': '            Portal de serventia do campo da casa nº 20 da Rua do Arrabalde da Cruz da Pedra            Confronta, do nascente, com a casa pertencente à propriedade, denominada, "O Bispo".'}]</p>
+        <p></p>
         </div>
 
         <script>
-        function openTab(cityName) {
+        function openTab(cityName) {{
         var i;
         var x = document.getElementsByClassName("city");
-        for (i = 0; i < x.length; i++) {
+        for (i = 0; i < x.length; i++) {{
             x[i].style.display = "none";  
-        }
+        }}
         document.getElementById(cityName).style.display = "block";  
-        }
+        }}
         </script>
 
     </body>

@@ -15,14 +15,22 @@
         </div>
 
         <div class="w3-bar w3-blue-gray">
-        <button class="w3-bar-item w3-button" onclick="openTab('London')">Imagens - Atualidade</button>
-        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens - Esquiços</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Atual')">Imagens</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens</button>
         <button class="w3-bar-item w3-button" onclick="openTab('Tokyo')">Descrição</button>
         </div>
 
-        <div id="London" class="w3-container city">
-        <h2>London</h2>
-        <p>London is the capital city of England.</p>
+        <div id="Atual" class="w3-container city">
+        <h2>Imagens</h2>
+    
+            <img src=/home/rod/Desktop/EngWeb2024/TPC1/MapaRuas-materialBase/texto/../imagem/MRB-28-RuaDireita-Poente.png class="w3-round-large" alt=MRB-28-poente style="width:100%">
+            <p>Rua Direita - poente </p>
+            <br>
+        
+            <img src=/home/rod/Desktop/EngWeb2024/TPC1/MapaRuas-materialBase/texto/../imagem/MRB-28-RuaDireita-Nascente.png class="w3-round-large" alt=MRB-28-nascente style="width:100%">
+            <p> Rua Direita - nascente </p>
+            <br>
+        
         </div>
 
         <div id="Paris" class="w3-container city" style="display:none">
@@ -31,18 +39,18 @@
         </div>
 
         <div id="Tokyo" class="w3-container city" style="display:none">
-        <p>[{'para': '            Longa rua, no enfiamento da rua Cruz de Pedra, que se prolongava até ao            Monte das Penas, ponto extremo da cidade onde havia uma igreja e que corresponde actualmente ao espaço compreendido entre o largo de Maximinos e a praça do Condestável        '}, {'para': '            Aberta em data que desconhecemos torna-se notável pela ordenação dos seus edifícios,            muito singelos, de pedra, com dois pisos, com porta e janela portadas de madeira no.º1 piso            e com duas janelas bracarenses no andar superior; as empenas, corridas, estão quase todas ao mesmo nível.            No extremo da rua, no Monte das Penas, vê-se uma casa grande, talvez de quinta e, a seu lado,            ruínas de outra.        '}, {'para': '            Com 41 casas do lado Nascente e 29 do Poente, nenhuma destas casas, curiosamente, era prazo do Cabido.          '}, {'para': '            Mantém actualmente o mesmo nome.        '}, {'para': '            Não tem casas foreiras ao cabido.        '}]</p>
+        <p></p>
         </div>
 
         <script>
-        function openTab(cityName) {
+        function openTab(cityName) {{
         var i;
         var x = document.getElementsByClassName("city");
-        for (i = 0; i < x.length; i++) {
+        for (i = 0; i < x.length; i++) {{
             x[i].style.display = "none";  
-        }
+        }}
         document.getElementById(cityName).style.display = "block";  
-        }
+        }}
         </script>
 
     </body>

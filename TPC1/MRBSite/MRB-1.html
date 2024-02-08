@@ -15,14 +15,22 @@
         </div>
 
         <div class="w3-bar w3-blue-gray">
-        <button class="w3-bar-item w3-button" onclick="openTab('London')">Imagens - Atualidade</button>
-        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens - Esquiços</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Atual')">Imagens</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens</button>
         <button class="w3-bar-item w3-button" onclick="openTab('Tokyo')">Descrição</button>
         </div>
 
-        <div id="London" class="w3-container city">
-        <h2>London</h2>
-        <p>London is the capital city of England.</p>
+        <div id="Atual" class="w3-container city">
+        <h2>Imagens</h2>
+    
+            <img src=/home/rod/Desktop/EngWeb2024/TPC1/MapaRuas-materialBase/texto/../imagem/MRB-01-RuaDoCampo-nascente.PNG class="w3-round-large" alt=MRB-01-nascente style="width:100%">
+            <p>Rua do Campo - vista nascente.  </p>
+            <br>
+        
+            <img src=/home/rod/Desktop/EngWeb2024/TPC1/MapaRuas-materialBase/texto/../imagem/MRB-01-RuaDoCampo-poente.PNG class="w3-round-large" alt=MRB-01-poente style="width:100%">
+            <p>Rua do Campo - vista poente. </p>
+            <br>
+        
         </div>
 
         <div id="Paris" class="w3-container city" style="display:none">
@@ -31,18 +39,18 @@
         </div>
 
         <div id="Tokyo" class="w3-container city" style="display:none">
-        <p>[{'para': 'Pequena rua, entre a rua Nova e a Porta de S. Francisco, existente ja na Idade Media, entao com o nome de rua Nova.'}, {'para': 'Actualmente toda esta rua tem feição diferente: a porta de S. Francisco foi demolida em data que desconhecemos e a parte central do lado Nascente foi destruida em 1754 para aí se construir o novo edificio da Camara Municipal (so concluido em 1865) que ficou com a fachada traseira para esta rua. O lado Sul foi integralmente perdido no final da decada de oitenta do seculo passado, quando se fez o alargamento e rectificação do traçado desta artéria.'}, {'para': 'Se, na Idade Media, esta rua teve, possivelmente, grande importância (tinha uma porta num dos seus extremos, dava imediato acesso a saída de Braga para Prado, Ponte de Lima e Valença, atraves da rua da Conega), no sec. XVIII, o seu peso deve ter decaído bastante.'}, {'para': 'A designagao de Campo podera datar talvez do primeiro quartel do sec. XVI, quando passou a estar em ligação com o campo da Vinha, então aberto.'}, {'para': 'Das 10 casas do lado Nascente e 14 do Poente, apenas três deste lado pertenciam ao Cabido. '}, {'para': 'A rua do Campo é um troço da actual rua D. Frei Caetano Brandao, entre a rua D. Diogo de Sousa e o largo Conselheiro Torres e Almeida, tendo recebido esta designação na sessão da Câmara de 28.07.1890.'}, {'para': 'Desde o ano de 1719 que os nº 1 e 2 se encontravam unidos. A frontaria que dá para a Rua Nova de Sousa corresponde ao nº15 da dita rua e é foreira à comenda de São Pedro de Merelim. '}, {'para': 'Desde o ano de 1719 que os nº 1 e 2 se encontravam unidos. A frontaria que dá para a Rua Nova de Sousa corresponde ao nº15 da dita rua e é foreira à comenda de São Pedro de Merelim. '}, {'para': 'Confronta, de Sul, com parte da mesma casa foreira à Confraria da Trindade, antiga Confraria da Companhia de Jesus e, de Norte, com casa dízima a Deus'}]</p>
+        <p></p>
         </div>
 
         <script>
-        function openTab(cityName) {
+        function openTab(cityName) {{
         var i;
         var x = document.getElementsByClassName("city");
-        for (i = 0; i < x.length; i++) {
+        for (i = 0; i < x.length; i++) {{
             x[i].style.display = "none";  
-        }
+        }}
         document.getElementById(cityName).style.display = "block";  
-        }
+        }}
         </script>
 
     </body>

@@ -1,10 +1,12 @@
 import parse
+import os
 
-bd = parse.parse("C:/Users/Utilizador/Desktop/UM/EngWeb2024/TPC1/MapaRuas-materialBase/texto")
+print(os.getcwd())
+bd = parse.parse("/home/rod/Desktop/EngWeb2024/TPC1/MapaRuas-materialBase/texto")
 
 for e in bd:
     f = open('MRBSite/MRB-'+str(e['meta']['número'])+'.html', 'w', encoding='utf-8')
-    pagHTML = f"""
+    preHTML = f"""
     <!DOCTYPE html> 
     <html>
 
@@ -21,14 +23,24 @@ for e in bd:
         </div>
 
         <div class="w3-bar w3-blue-gray">
-        <button class="w3-bar-item w3-button" onclick="openTab('London')">Imagens - Atualidade</button>
-        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens - Esquiços</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Atual')">Imagens</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens</button>
         <button class="w3-bar-item w3-button" onclick="openTab('Tokyo')">Descrição</button>
         </div>
 
-        <div id="London" class="w3-container city">
-        <h2>London</h2>
-        <p>London is the capital city of England.</p>
+        <div id="Atual" class="w3-container city">
+        <h2>Imagens</h2>
+    """
+    img_atual = ""
+
+    for img in e['figura']:
+        img_atual += f"""
+            <img src={'/home/rod/Desktop/EngWeb2024/TPC1/MapaRuas-materialBase/texto/' + img['path']} class="w3-round-large" alt={img['id']} style="width:100%">
+            <p>{img['legenda']} </p>
+            <br>
+        """
+        
+    posHTML = """
         </div>
 
         <div id="Paris" class="w3-container city" style="display:none">
@@ -55,5 +67,7 @@ for e in bd:
 
     </html>
     """
+    
+    pagHTML = preHTML + img_atual + posHTML
     f.write(pagHTML)
     f.close()

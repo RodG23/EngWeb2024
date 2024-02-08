@@ -15,14 +15,22 @@
         </div>
 
         <div class="w3-bar w3-blue-gray">
-        <button class="w3-bar-item w3-button" onclick="openTab('London')">Imagens - Atualidade</button>
-        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens - Esquiços</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Atual')">Imagens</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens</button>
         <button class="w3-bar-item w3-button" onclick="openTab('Tokyo')">Descrição</button>
         </div>
 
-        <div id="London" class="w3-container city">
-        <h2>London</h2>
-        <p>London is the capital city of England.</p>
+        <div id="Atual" class="w3-container city">
+        <h2>Imagens</h2>
+    
+            <img src=/home/rod/Desktop/EngWeb2024/TPC1/MapaRuas-materialBase/texto/../imagem/MRB-15-TravessaDaRuaDoPocoParaADeDGualdim-Norte.jpg class="w3-round-large" alt=MRB-15-norte style="width:100%">
+            <p>Travessa da Rua do Poço para a de D.Gualdim - vista norte. </p>
+            <br>
+        
+            <img src=/home/rod/Desktop/EngWeb2024/TPC1/MapaRuas-materialBase/texto/../imagem/MRB-15-TravessaDaRuaDoPocoParaADeDGualdim-Sul.jpg class="w3-round-large" alt=MRB-15-sul style="width:100%">
+            <p>Travessa da Rua do Poço para a de D.Gualdim - vista sul. </p>
+            <br>
+        
         </div>
 
         <div id="Paris" class="w3-container city" style="display:none">
@@ -31,18 +39,18 @@
         </div>
 
         <div id="Tokyo" class="w3-container city" style="display:none">
-        <p>[{'para': '            Fragmento da actual rua D. Afonso Henriques, entre as ruas D. Gonçalo Pereira e D. Gualdim Pais.        '}, {'para': '            Se na sua pequeníssima extensão poucas casas há (1 do lado Norte e 4 do lado Sul, todas prazos do Cabido) não deixa de ter mesmo assim dois edifícios interessantes: a dos prazos 5 e 6, boa casa de pedra com uma notável porta varanda dos finais de seiscentos; e a dos números 1 e 2 por ser uma casa muito grande com o piso superior sobradado, à maneira antiga.        '}, {'para': '           Curiosos são ainda os prazos n.ºs 3 e 4 onde se vêem 2 habitações com «porta ladeada de uma janela» que eram frequentes, sobretudo, nas ruas existentes no exterior das muralhas.        '}, {'para': '           Alargadas nos finais do séc. XIX, não se conservam hoje nenhuma das casas desta rua existentes no Mappa.        '}, {'para': '            Pertencem ao n.º 21 da Rua do Poço, para onde têm a frontaria e serventia principais. Foram unidas no ano de 1609.        '}, {'para': '            Pertencem ao n.º 21 da Rua do Poço, para onde têm a frontaria e serventia principais. Foram unidas no ano de 1609.        '}, {'para': '            As casa n.º 2 e 3 estiveram unidas, num só prazo, ao n° 4, entre os anos de 1533 e 1597.        '}, {'para': '            As casa n.º 2 e 3 estiveram unidas, num só prazo, ao n° 4, entre os anos de 1533 e 1597.        '}, {'para': '            O n.º 5 situa-se defronte da porta do açougue.         '}, {'para': '            Ao n° 6, pertence uma casa terceira da rua que vai desta travessa para Santiago. Possui frontaria para a Rua de D. Gualdim.        '}, {'para': '            O n.º 5 situa-se defronte da porta do açougue.         '}, {'para': '            Ao n° 6, pertence uma casa terceira da rua que vai desta travessa para Santiago. Possui frontaria para a Rua de D. Gualdim.        '}, {'para': '            Correspondem ao n° 7 da Rua de D. Gualdim, para onde têm a frontaria e serventia principais.        '}, {'para': '            Correspondem ao n° 7 da Rua de D. Gualdim, para onde têm a frontaria e serventia principais.        '}, {'para': '            Corresponde ao n° 22 da Rua do Poço, para onde tem a frontaria principal.        '}]</p>
+        <p></p>
         </div>
 
         <script>
-        function openTab(cityName) {
+        function openTab(cityName) {{
         var i;
         var x = document.getElementsByClassName("city");
-        for (i = 0; i < x.length; i++) {
+        for (i = 0; i < x.length; i++) {{
             x[i].style.display = "none";  
-        }
+        }}
         document.getElementById(cityName).style.display = "block";  
-        }
+        }}
         </script>
 
     </body>

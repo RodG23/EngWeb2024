@@ -3,7 +3,7 @@ import parse
 def chaveOrd(rua):
     return rua['meta']['nome']
 
-bd = parse.parse("C:/Users/Utilizador/Desktop/UM/EngWeb2024/TPC1/MapaRuas-materialBase/texto")
+bd = parse.parse("/home/rod/Desktop/EngWeb2024/TPC1/MapaRuas-materialBase/texto")
 bd.sort(key=chaveOrd)
 
 preHTML = f"""
@@ -54,9 +54,11 @@ conteudo = ""
 
 for e in bd:
     conteudo += f"""
-        <button class="w3-button w3-blue-gray w3-border w3-border-black w3-round-xxlarge w3-hover-teal w3-padding-16 ">
-            <a href="MRB-{e['meta']['número']}.html">{e['meta']['nome']}</a>
-        </button> <br>
+        <a href="MRB-{e['meta']['número']}.html">
+            <button class="w3-button w3-blue-gray w3-border w3-border-black w3-round-xxlarge w3-hover-teal w3-padding-16 ">
+                {e['meta']['nome']}
+            </button> <br>
+        </a>
     """
     
 pagHTML = preHTML + conteudo + posHTML

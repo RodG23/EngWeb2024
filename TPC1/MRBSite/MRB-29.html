@@ -15,14 +15,22 @@
         </div>
 
         <div class="w3-bar w3-blue-gray">
-        <button class="w3-bar-item w3-button" onclick="openTab('London')">Imagens - Atualidade</button>
-        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens - Esquiços</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Atual')">Imagens</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens</button>
         <button class="w3-bar-item w3-button" onclick="openTab('Tokyo')">Descrição</button>
         </div>
 
-        <div id="London" class="w3-container city">
-        <h2>London</h2>
-        <p>London is the capital city of England.</p>
+        <div id="Atual" class="w3-container city">
+        <h2>Imagens</h2>
+    
+            <img src=/home/rod/Desktop/EngWeb2024/TPC1/MapaRuas-materialBase/texto/../imagem/MRB-29-Beco-Norte.png class="w3-round-large" alt=MRB-29-norte style="width:100%">
+            <p>Rua do Beco - Norte </p>
+            <br>
+        
+            <img src=/home/rod/Desktop/EngWeb2024/TPC1/MapaRuas-materialBase/texto/../imagem/MRB-29-Beco-Sul.png class="w3-round-large" alt=MRB-29-sul style="width:100%">
+            <p>Rua do Beco - Sul </p>
+            <br>
+        
         </div>
 
         <div id="Paris" class="w3-container city" style="display:none">
@@ -31,18 +39,18 @@
         </div>
 
         <div id="Tokyo" class="w3-container city" style="display:none">
-        <p>[{'para': '            Pequena rua, bastante ampla no enfiamento da Cangosta de S.Sebastião        '}, {'para': '            Nada sabemos sobre esta artéria, de arrabalde, que em 1750 apresentava as            suas casas construídas um pouco a esmo, com dois pisos e janelas de portadas de madeira.        '}, {'para': '            Com uma importância bem secundária na via da cidade - de notar a quantidade de árvores, dois muros em ruínas, etc. - veria essa importância ainda ser diminuída nos fins do séc. XVIII, quando a medieval igreja de Maximinos, que então se localizava algures, sensivelmente no extremo Oeste desta rua, foi destruída e transferida para o local onde está actualmente. Em 1881-1884 com a abertura da rua do Caires, o Beco transformou-se num largo que se manteve, curiosamente            e a contra-senso, o topónimo.        '}, {'para': '            Das 21 casas do lado Norte e 15 do Sul nenhuma era prazo do Cabido.        '}, {'para': '            Não tem casas foreiras ao Cabido.        '}]</p>
+        <p></p>
         </div>
 
         <script>
-        function openTab(cityName) {
+        function openTab(cityName) {{
         var i;
         var x = document.getElementsByClassName("city");
-        for (i = 0; i < x.length; i++) {
+        for (i = 0; i < x.length; i++) {{
             x[i].style.display = "none";  
-        }
+        }}
         document.getElementById(cityName).style.display = "block";  
-        }
+        }}
         </script>
 
     </body>

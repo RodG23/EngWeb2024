@@ -15,14 +15,22 @@
         </div>
 
         <div class="w3-bar w3-blue-gray">
-        <button class="w3-bar-item w3-button" onclick="openTab('London')">Imagens - Atualidade</button>
-        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens - Esquiços</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Atual')">Imagens</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens</button>
         <button class="w3-bar-item w3-button" onclick="openTab('Tokyo')">Descrição</button>
         </div>
 
-        <div id="London" class="w3-container city">
-        <h2>London</h2>
-        <p>London is the capital city of England.</p>
+        <div id="Atual" class="w3-container city">
+        <h2>Imagens</h2>
+    
+            <img src=/home/rod/Desktop/EngWeb2024/TPC1/MapaRuas-materialBase/texto/../imagem/MRB-57-EstradaDeReal-norte.jpg class="w3-round-large" alt=MRB-57-norte style="width:100%">
+            <p>Estrada de Real - norte. </p>
+            <br>
+        
+            <img src=/home/rod/Desktop/EngWeb2024/TPC1/MapaRuas-materialBase/texto/../imagem/MRB-57-EstradaDeReal-sul.jpg class="w3-round-large" alt=MRB-57-sul style="width:100%">
+            <p>Estrada de Real - sul. </p>
+            <br>
+        
         </div>
 
         <div id="Paris" class="w3-container city" style="display:none">
@@ -31,18 +39,18 @@
         </div>
 
         <div id="Tokyo" class="w3-container city" style="display:none">
-        <p>[{'para': 'Longa via, talvez decalcando a velha estrada romana, saía de Braga, por terrenos que pensamos ser coincidentes com os da actual rua Andrade Corvo, em direção á freguesia suburbana de S.Jerónimo de Real.'}, {'para': 'Em 1750, todas as suas casas (3 do lado Norte e 15 do Sul) eram foreiras ao Cabido e incluiam-se no prazo da Quinta da Cónega.'}, {'para': 'Eram, naturalmente, construções muito pequenas, muito simples, de um só piso (excepto 2), e do tipo de porta ladeada por janela. Estes edifícios inscreviam-se apenas no extremo Oeste da rua: o restante espaço estava ocupado apenas com campos de cultivo.'}, {'para': 'Campo do prazo da  Quinta da Cónega(freguesia de S.Pedro de Maximinos).'}, {'para': 'Pertencem à Quinta da Cónega, a cujo enfiteuta se paga foro. O nº17 confronta, do poente, com o caminho que vai para a  Quinta do Real.'}, {'para': 'O nº18, confronta, do poente, com o caminho que vai junto da Curutelapara a cangosta do Pópulo.'}, {'para': 'Corresponde a um campo do prazo da  Quinta da Cónega. Confronta, do nascente, com a casa nº22 da Rua da Cónega.'}]</p>
+        <p></p>
         </div>
 
         <script>
-        function openTab(cityName) {
+        function openTab(cityName) {{
         var i;
         var x = document.getElementsByClassName("city");
-        for (i = 0; i < x.length; i++) {
+        for (i = 0; i < x.length; i++) {{
             x[i].style.display = "none";  
-        }
+        }}
         document.getElementById(cityName).style.display = "block";  
-        }
+        }}
         </script>
 
     </body>

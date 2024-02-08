@@ -15,14 +15,18 @@
         </div>
 
         <div class="w3-bar w3-blue-gray">
-        <button class="w3-bar-item w3-button" onclick="openTab('London')">Imagens - Atualidade</button>
-        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens - Esquiços</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Atual')">Imagens</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens</button>
         <button class="w3-bar-item w3-button" onclick="openTab('Tokyo')">Descrição</button>
         </div>
 
-        <div id="London" class="w3-container city">
-        <h2>London</h2>
-        <p>London is the capital city of England.</p>
+        <div id="Atual" class="w3-container city">
+        <h2>Imagens</h2>
+    
+            <img src=/home/rod/Desktop/EngWeb2024/TPC1/MapaRuas-materialBase/texto/../imagem/MRB-59-RuaDosBiscainhos-norte.jpg class="w3-round-large" alt=MRB-59-norte style="width:100%">
+            <p>Rua Dos Biscaínhos - norte. </p>
+            <br>
+        
         </div>
 
         <div id="Paris" class="w3-container city" style="display:none">
@@ -31,18 +35,18 @@
         </div>
 
         <div id="Tokyo" class="w3-container city" style="display:none">
-        <p>[{'para': 'Aberta no séc. XVI no tempo de D.Diogo de Sousa, unia o campo da Vinha com o campo das Hortas.'}, {'para': ' Em finais do  séc.XVI, tinha já muitos edifícios conforme nos mostra o mapa de Braunio.'}, {'para': 'No Mappa, contudo, estão apenas desenhados três edifícios do lado Norte: dois de três pisos e o palácio dos Biscaínhos .'}, {'para': 'Se as casas são simples e de arquitetura tradicional, o palácio é o magnífico edifício que, felizmente, ainda hoje se mantém intacto.'}, {'para': 'Curiosamente, no Mappa, não há indicações de que qualquer um destes edifícios foram foreiros ao Cabido. No volume 4 dos Índices dos Prazos do Cabido (p.441 e 442) há, porém, notícia de duas destas casas serem emprazadas.'}, {'para': ' Mantém a designação de rua dos Biscaínhos.'}, {'para': 'Os herdeiros do Lic.  Domingos Correia de Abreu pagam 150 reis e 2 alqueires e meio de trigo ao enfiteuta do prazo da Quinta da Cónega'}, {'para': 'Pertence ao nº1 da Rua da Cónega, para onde tem, também, frontaria.'}, {'para': 'A fachada situa-se no Campo da Vinha.'}]</p>
+        <p></p>
         </div>
 
         <script>
-        function openTab(cityName) {
+        function openTab(cityName) {{
         var i;
         var x = document.getElementsByClassName("city");
-        for (i = 0; i < x.length; i++) {
+        for (i = 0; i < x.length; i++) {{
             x[i].style.display = "none";  
-        }
+        }}
         document.getElementById(cityName).style.display = "block";  
-        }
+        }}
         </script>
 
     </body>

@@ -15,14 +15,22 @@
         </div>
 
         <div class="w3-bar w3-blue-gray">
-        <button class="w3-bar-item w3-button" onclick="openTab('London')">Imagens - Atualidade</button>
-        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens - Esquiços</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Atual')">Imagens</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens</button>
         <button class="w3-bar-item w3-button" onclick="openTab('Tokyo')">Descrição</button>
         </div>
 
-        <div id="London" class="w3-container city">
-        <h2>London</h2>
-        <p>London is the capital city of England.</p>
+        <div id="Atual" class="w3-container city">
+        <h2>Imagens</h2>
+    
+            <img src=/home/rod/Desktop/EngWeb2024/TPC1/MapaRuas-materialBase/texto/../imagem/MRB-13-RuaPequena-Nascente.jpg class="w3-round-large" alt=MRB-13-nascente style="width:100%">
+            <p>RuaPequena - vista nascente. </p>
+            <br>
+        
+            <img src=/home/rod/Desktop/EngWeb2024/TPC1/MapaRuas-materialBase/texto/../imagem/MRB-13-RuaPequena-Poente.jpg class="w3-round-large" alt=MRB-13-poente style="width:100%">
+            <p>RuaPequena - vista poente. </p>
+            <br>
+        
         </div>
 
         <div id="Paris" class="w3-container city" style="display:none">
@@ -31,18 +39,18 @@
         </div>
 
         <div id="Tokyo" class="w3-container city" style="display:none">
-        <p>[{'para': '            Como o nome diz é uma pequenina rua que ligava a rua das Oucias com a travessa da rua do Forno para a do Poço.        '}, {'para': '            Respeitando o reticulado romano era mais uma das artérias do bairro medieval adjacente à catedral.        '}, {'para': '            Na Idade Média era já pequena e permitia um melhor acesso ao mercado da olaria, então existente junto ao transepto da Sé. Por isso recebeu esse nome.        '}, {'para': '            No séc. XVI, o célebre humanista Diogo Teive emprazou ao Cabido a casa n.º 2, passando a ser conhecida por rua do Teive. Até que por volta de 1620 Mateus Fernando Farto, talvez senhor de forte importância política ou económica, veio para aqui viver, tanto bastando para ser conhecida pelo seu apelido.        '}, {'para': '            No Mappa, contudo, aparece como rua Pequena. Sabemos ainda que talvez a partir do fim da Idade Média, e durante cerca de um século, também foi chamada de rua Painsalvos, por nela ter morado o abade da freguesia transmontana do mesmo nome.        '}, {'para': '            Embora pequena, tem 3 edifícios notáveis: o prazo n.º 1, grande construção em pedra, com fachada bem organizada e um recuado em toda a extensão; o prazo n.º 2, casa com quase excesso de aberturas, (sem comparação com qualquer outra em todo o Mappa); e o prazo n.º 5, construção também em pedra, de 2 pisos, com mais um piso, no seu último vão Sul, quase semelhando uma torre.        '}, {'para': '            Das 4 casas existentes quer no lado Nascente, quer no Poente, 3 e 4, respectivamente, são prazos do Cabido.        '}, {'para': '            Corresponde ao n° 8 da Rua das Oussias, para onde tem a frontaria e serventia principais.        '}, {'para': '            Prazo constituído por casa, quintal e palheiro. este incorporado em 1618 e pertencente ao            n.º\t1.        '}, {'para': '            Confronta, do norte, com casa dízima a Deus e com o n° 2 e, do sul, com casa foreira ao morgado de Real.          '}, {'para': '            Corresponde ao n° 7 da travessa que vai da Rua do Poço ou de Santa Maria para a do Forno, para onde tem frontaria e serventia principais.        '}, {'para': '            Este prazo encontra-se unido desde 1583.        '}, {'para': '            Este prazo encontra-se unido desde 1583.        '}, {'para': '            A enfiteuta foi herdeira do Reitor de Freitas, José Ferreira Petiz. A casa foi construída, depois de 1587, em pertenças do n.º 9 da Rua do Poço ou de Santa Maria.         '}, {'para': '            Corresponde ao n.º 9 da Rua das Oussias, para onde tem a frontaria e serventia principais. Situa-se na esquina da Rua Pequena e terreiro das Oussias.        '}]</p>
+        <p></p>
         </div>
 
         <script>
-        function openTab(cityName) {
+        function openTab(cityName) {{
         var i;
         var x = document.getElementsByClassName("city");
-        for (i = 0; i < x.length; i++) {
+        for (i = 0; i < x.length; i++) {{
             x[i].style.display = "none";  
-        }
+        }}
         document.getElementById(cityName).style.display = "block";  
-        }
+        }}
         </script>
 
     </body>
