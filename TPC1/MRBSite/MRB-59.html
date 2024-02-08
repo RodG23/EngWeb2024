@@ -15,39 +15,104 @@
         </div>
 
         <div class="w3-bar w3-blue-gray">
-        <button class="w3-bar-item w3-button" onclick="openTab('Atual')">Imagens</button>
-        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('London')">Imagens</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Casas</button>
         <button class="w3-bar-item w3-button" onclick="openTab('Tokyo')">Descrição</button>
         </div>
 
-        <div id="Atual" class="w3-container city">
-        <h2>Imagens</h2>
-    
-            <img src=/home/rod/Desktop/EngWeb2024/TPC1/MapaRuas-materialBase/texto/../imagem/MRB-59-RuaDosBiscainhos-norte.jpg class="w3-round-large" alt=MRB-59-norte style="width:100%">
+        <div id="London" class="w3-container city">
+    <h2>Esquiços</h2>
+            <img src=../MapaRuas-materialBase/imagem/../imagem/MRB-59-RuaDosBiscainhos-norte.jpg class="w3-round-large" alt=MRB-59-norte style="width:100%">
             <p>Rua Dos Biscaínhos - norte. </p>
             <br>
-        
+        <br> <h2>Atualidade</h2>
+                <img src=C:\Users\Utilizador\Desktop\UM\EngWeb2024\TPC1\MapaRuas-materialBase\atual\59-RuadosBisca┬░nhos-Vista1.JPG class="w3-round-large w3-padding-32 w3-margin" style="width:40%">
+            
+                <img src=C:\Users\Utilizador\Desktop\UM\EngWeb2024\TPC1\MapaRuas-materialBase\atual\59-RuadosBisca┬░nhos-Vista2.JPG class="w3-round-large w3-padding-32 w3-margin" style="width:40%">
+            
         </div>
 
         <div id="Paris" class="w3-container city" style="display:none">
-        <h2>Paris</h2>
-        <p>Paris is the capital of France.</p> 
+        <h2>Casas</h2>
+
+    
+            <ul class="w3-ul w3-card-4" style="width:100%">
+                <li><b>Número</b> -> 1</li>
+                <li><b>Enfiteuta</b> -> Sebastião de Faria Gusmão, enfiteuta principal da Quinta da Cónega.</li>
+                <li><b>Foro</b> -> </li>
+                <li><b>Vista</b> -> </li>
+                <li><b>Descrição</b> -> Os herdeiros do Lic.  Domingos Correia de Abreu pagam 150 reis e 2 alqueires e meio de trigo ao enfiteuta do prazo da Quinta da Cónega</li>
+            </ul>
+            <br>
+            
+            <ul class="w3-ul w3-card-4" style="width:100%">
+                <li><b>Número</b> -> 2</li>
+                <li><b>Enfiteuta</b> -> Sebastião de Faria Gusmão, enfiteuta principal da Quinta da Cónega.</li>
+                <li><b>Foro</b> -> </li>
+                <li><b>Vista</b> -> </li>
+                <li><b>Descrição</b> -> Pertence ao nº1 da Rua da Cónega, para onde tem, também, frontaria.</li>
+            </ul>
+            <br>
+            
         </div>
 
         <div id="Tokyo" class="w3-container city" style="display:none">
-        <p></p>
+            <h2>Descrição da Rua</h2>
+    
+            <div class="w3-panel w3-light-gray">
+                <p>Aberta no séc. XVI no tempo de D.Diogo de Sousa, unia o campo da Vinha com o campo das Hortas.</p>
+            </div>
+        
+            <div class="w3-panel w3-light-gray">
+                <p> Em finais do  séc.XVI, tinha já muitos edifícios conforme nos mostra o mapa de Braunio.</p>
+            </div>
+        
+            <div class="w3-panel w3-light-gray">
+                <p>No Mappa, contudo, estão apenas desenhados três edifícios do lado Norte: dois de três pisos e o palácio dos Biscaínhos .</p>
+            </div>
+        
+            <div class="w3-panel w3-light-gray">
+                <p>Se as casas são simples e de arquitetura tradicional, o palácio é o magnífico edifício que, felizmente, ainda hoje se mantém intacto.</p>
+            </div>
+        
+            <div class="w3-panel w3-light-gray">
+                <p>Curiosamente, no Mappa, não há indicações de que qualquer um destes edifícios foram foreiros ao Cabido. No volume 4 dos Índices dos Prazos do Cabido (p.441 e 442) há, porém, notícia de duas destas casas serem emprazadas.</p>
+            </div>
+        
+            <div class="w3-panel w3-light-gray">
+                <p> Mantém a designação de rua dos Biscaínhos.</p>
+            </div>
+        
+            <div class="w3-panel w3-light-gray">
+                <p>Os herdeiros do Lic.  Domingos Correia de Abreu pagam 150 reis e 2 alqueires e meio de trigo ao enfiteuta do prazo da Quinta da Cónega</p>
+            </div>
+        
+            <div class="w3-panel w3-light-gray">
+                <p>Pertence ao nº1 da Rua da Cónega, para onde tem, também, frontaria.</p>
+            </div>
+        
+            <div class="w3-panel w3-light-gray">
+                <p>A fachada situa-se no Campo da Vinha.</p>
+            </div>
+        
         </div>
-
         <script>
-        function openTab(cityName) {{
+        function openTab(cityName) {
         var i;
         var x = document.getElementsByClassName("city");
-        for (i = 0; i < x.length; i++) {{
+        for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";  
-        }}
+        }
         document.getElementById(cityName).style.display = "block";  
-        }}
+        }
         </script>
+        
+        <footer class="w3-container w3-red">
+            <h5>Generated by RodEnterprises::EngWeb2024::A100555 </h5>
+            <address>
+                <a href="index.html">Volar à página inicial</a>
+            </address>
+        </footer> 
 
     </body>
 

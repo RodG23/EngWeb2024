@@ -25,6 +25,7 @@ def parse(dir):
         tree = xml.etree.ElementTree.parse(full_path)
         root = tree.getroot()
         dict = {}
+        dict['lista-casas'] = []
 
         for element in root.iter():
             
@@ -48,13 +49,17 @@ def parse(dir):
                 dict[element.tag].append({'para' : para})
                 
             if element.tag == 'lista-casas':
-                if element.tag not in dict:
-                    dict[element.tag] = []
                     for casa in element.findall('casa'):
                         numero = casa.find('número').text
-                        enfiteuta = casa.find('enfiteuta').text if casa.find('enfiteuta') else ''
-                        foro = casa.find('foro').text if casa.find('foro') else ''
-                        vista = casa.find('vista').text if casa.find('vista') else ''
+                        if casa.find('enfiteuta') is not None:
+                            enfiteuta = casa.find('enfiteuta').text
+                        else: enfiteuta = ''
+                        if casa.find('foro') is not None:
+                            foro = casa.find('foro').text
+                        else: foro = '' 
+                        if casa.find('vista') is not None:
+                            vista = casa.find('vista').text
+                        else: vista = ''
                         if casa.find('desc'):
                             desc = []
                             for child in casa.find('desc'):
