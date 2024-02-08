@@ -1,0 +1,51 @@
+
+    <!DOCTYPE html> 
+    <html>
+
+        <head>
+            <title>Rua 4</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta charset="utf-8"/> 
+            <link rel="stylesheet" href="w3.css"> 
+        </head>
+
+    <body>
+
+        <div class="w3-container">
+        </div>
+
+        <div class="w3-bar w3-blue-gray">
+        <button class="w3-bar-item w3-button" onclick="openTab('London')">Imagens - Atualidade</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens - Esquiços</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Tokyo')">Descrição</button>
+        </div>
+
+        <div id="London" class="w3-container city">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+        </div>
+
+        <div id="Paris" class="w3-container city" style="display:none">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p> 
+        </div>
+
+        <div id="Tokyo" class="w3-container city" style="display:none">
+        <p>[{'para': 'Pequena praça em frente à fachada da Sé, que ao longo dos séculos foi tendo uma vida e importância diferentes, mas sempre descendente.'}, {'para': 'Aberta talvez no séc. XV, resultou da destruição da rua dos Açougues, pequena artéria que então ligava as actuais rua D. Gonçalo Pereira e D. Gualdim Pais. Nessa data instalou-se nela a Praça do Pão. No tempo de D. Diogo de Sousa construiu-se, no ângulo que esta praça faz com a rua de Maximinos, o novo edifício da Câmara Municipal, que seria destruído nos inícios do séc. XIX (No Mappa está na rua de D. Gualdim).'}, {'para': 'A partir de meados do séc. XVIII, com a mudança da vida comercial para a rua do Souto e zona exterior da porta que tem o mesmo nome, com a erecção da ala barroca do Palácio dos Arcebispos e, defrontando-a, com o novo edifício da Câmara (1755), a praça do Pão irá perdendo toda a sua importância comercial e política.'}, {'para': 'Em 1868 foi projectado o alargamento da rua de Maximinos, que rapidamente foi levado a cabo, recebendo a nova rua a largura total da praça do Pão. A partir daí deixou de fazer sentido a existência de duas artérias diferentes, sendo este largo integrado na nova rua que, desde 26/11/1925, se passou a chamar rua D. Paio Mendes.'}, {'para': 'Hoje ainda se conservam algumas das casas existentes no Mappa. Mas as mais interessantes, as dos prazos 4-6 e 13-14 já desapareceram.'}, {'para': 'Das 5 casas do lado Norte e 9 do lado Sul eram prazos do Cabido 4 e 9, respectivamente.'}, {'para': 'Confronta, de nascente, com a Rua do Poço.'}, {'para': 'As casas nº 5 e 6, passaram a constituir um único prazo, em 1702. Em 1789, o nº 4 foi também integrado no mesmo prazo.'}, {'para': 'As casas nº 5 e 6, passaram a constituir um único prazo, em 1702. Em 1789, o nº 4 foi também integrado no mesmo prazo.'}, {'para': 'O enfiteuta sucedeu a seu pai, Francisco de Araújo, o qual era filho de José de Araújo, barbeiro, e de sua mulher Ana Maria.'}, {'para': 'O enfiteuta sucedeu a seu pai, Francisco de Araújo, o qual era filho de José de Araújo, barbeiro, e de sua mulher Ana Maria.'}, {'para': 'Esta casa possui frontaria para a Rua de D. Gualdim. Igual pensão é paga ao Hospital de S. Marcos.'}, {'para': 'A parte do poente é foreira ao Hospital de S. Marcos.'}, {'para': 'Encontram-se unidas num único prazo desde o ano de 1660.'}, {'para': 'No ano de 1660 foi incorporado neste prazo uma torre pertencente ao nº 16, e, no ano de 1724, um quintal do nº 2 da Rua dos Açougues Velhos.'}]</p>
+        </div>
+
+        <script>
+        function openTab(cityName) {
+        var i;
+        var x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        document.getElementById(cityName).style.display = "block";  
+        }
+        </script>
+
+    </body>
+
+    </html>
+    

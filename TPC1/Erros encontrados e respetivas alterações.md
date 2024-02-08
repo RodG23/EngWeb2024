@@ -1,5 +1,11 @@
 # Erros detetados e respetivas alterações
 
+## Ficheiro xml da Rua número 6:
+- O nome da rua possuía um ' ' no início, causando problemas de ordenação alfabética.
+
+## Ficheiro xml da Rua número 7:
+- O nome da rua possuía um ' ' no início, causando problemas de ordenação alfabética.
+
 ## Ficheiro xml da Rua número 25:
 - O atributo de um elemento do tipo entidade tem o nome de 'tipo', não 'entidade'. Assim sendo, o correto é, por exemplo, 'endidade tipo="pessoa"  e não 'endidade entidade="pessoa" .
 

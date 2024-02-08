@@ -1,0 +1,51 @@
+
+    <!DOCTYPE html> 
+    <html>
+
+        <head>
+            <title>Rua 19</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta charset="utf-8"/> 
+            <link rel="stylesheet" href="w3.css"> 
+        </head>
+
+    <body>
+
+        <div class="w3-container">
+        </div>
+
+        <div class="w3-bar w3-blue-gray">
+        <button class="w3-bar-item w3-button" onclick="openTab('London')">Imagens - Atualidade</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens - Esquiços</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Tokyo')">Descrição</button>
+        </div>
+
+        <div id="London" class="w3-container city">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+        </div>
+
+        <div id="Paris" class="w3-container city" style="display:none">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p> 
+        </div>
+
+        <div id="Tokyo" class="w3-container city" style="display:none">
+        <p>[{'para': '            Pequena rua, que ligava a rua das Travessas com o Terreiro de Santo António. De raiz romana, não sabemos qual teria sido a sua função na cidade medieval.         '}, {'para': '            Em 1465 são transferidos para aqui os judeus e instalados no prédio mais interessante que hoje            aqui resta, e um dos mais estimáveis de toda a cidade, passando a ser denominada de Judiaria Nova. Esta casa veio depois a pertencer ao cónego João de Meira Carrilho, que lhe pôs as suas armas.        '}, {'para': '            No final de quatrocentos, com a obrigação que os judeus sofreram de abjurar a sua religião            passou a ser chamada de Sto. António, nome que se mantém.        '}, {'para': '            Das 3 casas medievais que se vêem no alçado Nascente nada resta hoje infelizmente (uma já estava            em adiantada ruína). Do lado Poente conservam-se algumas casas, ainda. É curioso notar que as suas construções têm um tipo de acabamento e proteção de janelas bem mais cuidado que a rua que lhe era sequente, a das Chagas.        '}, {'para': '            Esta artéria, que felizmente ainda hoje conserva o seu traçado original, tinha 7 casas do lado Nascente e 15 do Poente, sendo 6 e 11, respectivamente, prazos do Cabido.         '}, {'para': '            Encontram-se unidas, num só prazo, desde o ano de 1591. Possuem frontaria para a travessa            que vem da Rua de D. Gualdim para esta rua.        '}, {'para': '            Encontram-se unidas, num só prazo, desde o ano de 1524.        '}, {'para': '            Encontram-se unidas, num só prazo, desde o ano de 1592.        '}, {'para': '            Possui frontaria para o rossio ou terreiro de Sto. António,             com o qual confronta do sul.         '}, {'para': '           Estas casas (denominadas «Casas Torres»), encontram-se unidas, num só prazo,            desde o ano de 1697. Na casa n.º 12, onde foi colocada a imagem de Sto. António,            (antes de 1502), funcionou a antiga sinagoga.        '}, {'para': '            Confronta, do norte, com casa foreira ao mosteiro de Bouro.        '}, {'para': '            A casa n.º 22 confronta, do norte, com a travessa que vem da Rua            de D. Gualdim.        '}, {'para': '            A casa n.º 22 confronta, do norte, com a travessa que vem da Rua            de D. Gualdim.        '}, {'para': '            A casa n.º 22 confronta, do norte, com a travessa que vem da Rua            de D. Gualdim.        '}]</p>
+        </div>
+
+        <script>
+        function openTab(cityName) {
+        var i;
+        var x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        document.getElementById(cityName).style.display = "block";  
+        }
+        </script>
+
+    </body>
+
+    </html>
+    

@@ -28,7 +28,7 @@
     </xs:group>
     <xs:element name="rua"> <!-- Define o elemento rua, de tipo complexo-->
         <xs:complexType>
-            <xs:sequence> <!--Indica que os elementos dentro de "rua" devem aparecer na ordem especificada-->
+            <xs:sequence> <!--Indica que os elementos dentro de "rua" devem aparecer na ordem especificada (meta é sempre primeiro e depois corpo)-->
                 <xs:element name="meta"> <!--Define o elemento "meta" dentro de "rua", de tipo complexo-->
                     <xs:complexType>
                         <xs:sequence> <!--Os elementos dentro de meta (dentro de rua, por sua vez), devem aparecer na ordem específicada-->

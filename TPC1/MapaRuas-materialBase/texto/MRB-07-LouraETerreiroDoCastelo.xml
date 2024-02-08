@@ -4,7 +4,7 @@
     xsi:noNamespaceSchemaLocation="C:/Users/Utilizador/Desktop/UM/EngWeb2024/TPC1/MapaRuas-materialBase/MRB-rua.xsd">
     <meta>
         <número>7</número>
-        <nome> Loura e Terreiro do Castelo  </nome>
+        <nome>Loura e Terreiro do Castelo  </nome>
     </meta>
     <corpo>
         <figura id="MRB-07">

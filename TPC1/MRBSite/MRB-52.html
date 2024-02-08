@@ -1,0 +1,51 @@
+
+    <!DOCTYPE html> 
+    <html>
+
+        <head>
+            <title>Rua 52</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta charset="utf-8"/> 
+            <link rel="stylesheet" href="w3.css"> 
+        </head>
+
+    <body>
+
+        <div class="w3-container">
+        </div>
+
+        <div class="w3-bar w3-blue-gray">
+        <button class="w3-bar-item w3-button" onclick="openTab('London')">Imagens - Atualidade</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens - Esquiços</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Tokyo')">Descrição</button>
+        </div>
+
+        <div id="London" class="w3-container city">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+        </div>
+
+        <div id="Paris" class="w3-container city" style="display:none">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p> 
+        </div>
+
+        <div id="Tokyo" class="w3-container city" style="display:none">
+        <p>[{'para': 'Troço da Cangosta de Guadalupe, situado em frente à capela do mesmo nome.'}, {'para': 'Parcialmente construído em 1725, tinha, 25 anos mais tarde, ainda 3 «chãos». Um significativo espaço era ocupado por um grande quintal e pela fachada lateral de uma casa da rua de Nossa Senhora de Guadalupe, o que mostra bem a subalternização total desta rua.'}, {'para': 'As 5 casas construídas eram extremamente simples e tinham as janelas vazadas. Todos esses prédios estavam emprazados ao Cabido.'}, {'para': 'Chama-se actualmente rua de Guadalupe.'}, {'para': 'Pequena artéria, mais parecida com uma cangosta, ligava a igreja de S. Vicente com a capela de Guadalupe.'}, {'para': 'Rua de arrabalde, na vertente Noroeste do então chamado monte de Santa Margarida, tinha do lado Norte — o único representado no Mappa, onze habitações de um piso e duas de dois. Essas casas eram muito simples, do tipo com porta ladeada de janela. No extremo Este está uma casa de pedra, de dois pisos, bem definida por fortes pilastras, que tem a ladeá-la um bonito, mas singelo, portão de pedra.'}, {'para': 'Na década de 60 do séc. XVIII, a rua sofreu uma alteração de traçado - que é o que actualmente se vê - devido à construção, neste local, do convento e capela das Teresinhas, facto que motivou a amortização dos prazos 1 a 8.'}, {'para': 'Das 13 casas representadas no Mappa, 9 eram foreiras do cabido.'}, {'para': 'Desde 5 de Junho de 1880 passou, oficialmente, a chamar-se rua de Camões.'}, {'para': 'Pertence à casa n.° 17 da Rua de N. Sra. de Guadalupe,             para onde tem frontaria e serventia principais.'}, {'para': 'Quintal da casa n.° 1.'}, {'para': 'Silvestre de Oliveira, jornaleiro, casado com             Inês Dantas, paga 2000 reis, pelo chão n.° 3 e             pelos n.º 4 e 5, ao subenfiteuta da casa n.° 9             da Rua de N. Sra. de Guadalupe.'}, {'para': 'Portal de serventia do quintal que anda             subemprazado juntamente com a casa n.° 9 da             Rua N. Sra. de Guadalupe.'}, {'para': 'Pertencem ao casal dos Chãos ou Quinteiro, a             cujo enfiteuta se paga foro. Nos livros dos             prazos do cabido não se encontram escrituras se             subemprazamento'}, {'para': 'Chãos de casa do prazo do casal dos Chãos ou Quinteiro.'}, {'para': 'Paulo Francisco, ferreiro, casado com Jerónima da Silva,             paga 400 reis ao enfiteuta do prazo do             casal de Infias ou Flores.'}, {'para': 'Só parte do n.° 1 é foreiro ao cabido.'}, {'para': 'João da Costa, cutileiro, casado com Maria Ferreira,             paga 400 reis ao enfiteuta do prazo do             casal de Infias e Flores, conforme o             subemprazamento de 1720.'}, {'para': 'No ano de 1729 foram feitas escrituras             subalternas dos n.° 6 e 7. Só parte do n.° 7 é             deste subenfiteuta.'}, {'para': 'Garcia Fernandes, casado com Narcisa Francisca,             paga 600 reis ao subenfiteuta da casa             n.° 5. Só parte do n.° 7 é deste subenfiteuta.'}, {'para': 'Paga foro ao enfiteura do prazo do casal de Infias ou Flores.'}, {'para': 'Paga foro ao enfiteuta do prazo do casal de Infias ou Flores.             Confronta, do nascente, com             casa foreira à confraria de S. João do Souto.'}]</p>
+        </div>
+
+        <script>
+        function openTab(cityName) {
+        var i;
+        var x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        document.getElementById(cityName).style.display = "block";  
+        }
+        </script>
+
+    </body>
+
+    </html>
+    

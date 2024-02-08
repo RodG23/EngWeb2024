@@ -1,0 +1,51 @@
+
+    <!DOCTYPE html> 
+    <html>
+
+        <head>
+            <title>Rua 26</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta charset="utf-8"/> 
+            <link rel="stylesheet" href="w3.css"> 
+        </head>
+
+    <body>
+
+        <div class="w3-container">
+        </div>
+
+        <div class="w3-bar w3-blue-gray">
+        <button class="w3-bar-item w3-button" onclick="openTab('London')">Imagens - Atualidade</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens - Esquiços</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Tokyo')">Descrição</button>
+        </div>
+
+        <div id="London" class="w3-container city">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+        </div>
+
+        <div id="Paris" class="w3-container city" style="display:none">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p> 
+        </div>
+
+        <div id="Tokyo" class="w3-container city" style="display:none">
+        <p>[{'para': ' Pequena artéria extra-muros que ligava a rua Em Frente dos Açogues,com            o campo das Hortas e a rua de Cruz de Pedra.      '}, {'para': '            Decalcando um troço do possível traçado da muralha da cidade romana e na pendente da            capela de S.Miguel o Anjo, era já conhecida na Idade Média com o nome de rua de Maximinos. Destruída totalmente em 1384, por D. João de Castela, perdem-se depois as notícias sobre a sua história.        '}, {'para': '            Em 1750 era uma rua talvez sem comércio, com muitas casas de sobrado, algumas            varandas, muitas janelas com gelosias e apenas 4 edifícios totalmente construídos em pedra.            Destas, três situavam-se curiosamente em gavetos: as casas do prazo nº8 e a 9 e a que lhe ficava contígua. Esta tinha ainda a característica de apresentar uma das raras pedras de armas de heráldica de família, a dos Bravos, existente então na cidade.        '}, {'para': '            Das 14 casas do lado Norte e 11 do Sul, era prazos do Cabido oito e uma, respectivamente.        '}, {'para': '            Desde 1891 que se chama rua Visconde Pindela        '}, {'para': '            Pertenceu ao Padre João Rodrigues.            Confronta, do norte com casa foreira à Mitra.            Foi construída depois de 1539 em pertenças do nº2.        '}, {'para': '            A casa nº2 confronta, do poente, com o rossio que está            no princípio da Rua da Cruz da Pedra.        '}, {'para': '            Foi construída, depois de 1555, em pertenças do número 2.            Confronta, do nascente, com casa foreira à Câmara.        '}, {'para': '            Os livros das pensões referem que esta casa foi de João Gomes,            genro do Mestre Gonçalo, «e que há muitos anos se não paga             este censo».        '}, {'para': '            O censo é pago por Mónica Veloso de Freitas, viúva.        '}, {'para': '            Pertenceu Pedro Martins.            O censo é pago Gaspar de Medeiros.        '}, {'para': '            Pertence ao nº1 da rua em frente do Açogue para onde tem             frontaria e serventia principais.        '}, {'para': '            A casa e parte do quintal são foreiras ao Hospital de S.Marcos.            Pela outra parte do quintal paga-se, de foro, 451 reis ao nº1 do Campo de S.Sebastião. Encontra-se            subemprazada aos herdeiros do Padre António Velho Maciel, beneficiado.        '}]</p>
+        </div>
+
+        <script>
+        function openTab(cityName) {
+        var i;
+        var x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        document.getElementById(cityName).style.display = "block";  
+        }
+        </script>
+
+    </body>
+
+    </html>
+    

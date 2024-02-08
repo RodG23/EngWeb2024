@@ -1,0 +1,51 @@
+
+    <!DOCTYPE html> 
+    <html>
+
+        <head>
+            <title>Rua 23</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta charset="utf-8"/> 
+            <link rel="stylesheet" href="w3.css"> 
+        </head>
+
+    <body>
+
+        <div class="w3-container">
+        </div>
+
+        <div class="w3-bar w3-blue-gray">
+        <button class="w3-bar-item w3-button" onclick="openTab('London')">Imagens - Atualidade</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens - Esquiços</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Tokyo')">Descrição</button>
+        </div>
+
+        <div id="London" class="w3-container city">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+        </div>
+
+        <div id="Paris" class="w3-container city" style="display:none">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p> 
+        </div>
+
+        <div id="Tokyo" class="w3-container city" style="display:none">
+        <p>[{'para': 'Pequena artéria, no enfiamento da rua Verde, que ligava a rua de    Maximinos à rua Nova.'}, {'para': 'Aberta na Idade Média, aqui deveriam estar arruados os sapateiros há longa data,            porque já no Tombo do Cabido, datável cerca de 1369-80, lhe era dado o nome            de Çapataria.'}, {'para': 'Com muitas casas de raiz antiga, apresentava em 1750, do lado Poente,            muitas analogias com a de Maximinos, no tipo de            casas; mas sem a qualidade de desenho e o ordenamento que se vê naquela rua.'}, {'para': 'Tinha então a maioria dos edifícios com 3 pisos, 50% dos quais de dois sobrados; as            janelas eram do tipo bracarense, havendo, contudo, no terceiro piso, muitas com portadas            de madeira. Do lado Poente o primeiro piso teria lojas de comércio, detectáveis pela            largura da porta, a toda a extensão da casa. Do lado Nascente a tipologia é outra,            apesar de haver doisa casos, os prazos n.ª 2 e 10, de porta ampla; aqui aparece-nos            outro tipo de abertura que irá ser extremamente frequente em ruas secundárias de            extra-muros: trata-se da conjugação de uma porta normal ladeada por uma janela,            separadas por uma fina coluna de pedra de secção rectangular.'}, {'para': 'Em complemento desta rua está o Rossio da Praça, que comunicava a Oeste            com a Pracinha.'}, {'para': 'Implantado numa zona com um pequeno declive, apresentava habitações de três pisos,            sobradadas, no lado Norte e de 2 pisos no Sul, sendo estas muito semelhantes às do lado            Nascente da rua dos Sapateiros.'}, {'para': 'Das 15 casas do lado Nascente e 23 do Poente, eram prazos do Cabido 9 e 7 casas,            respectivamente. No Rossio da Praça havia 4 casas do lado Sul e 5 do            Norte, havendo só dois prazos do Cabido, no Sul.'}, {'para': 'Com o alargamento da rua em 1890, toda a linha de fachadas de Nascente            desapareceu. O alçado Poente, a partir do prazo n.º 15 e em direcção a Norte, bem como o    Rossio da Praça (lado Sul) mantiveram-se.'}, {'para': 'Actual fragmento da rua D. Frei Caetano Brandão.'}, {'para': 'Pertence ao n.º 13 da Rua Nova de Sousa, para onde tem a            frontaria e seventia principais.'}, {'para': 'Esta casa foi da sogra de Luís de            Abreu, Helena Vaz, filha de    Manuel de Freitas.'}, {'para': 'Confronta, do norte, com casa foreira à comenda de Rio Frio.'}, {'para': 'Confronta, do norte, com casa foreira à comenda de Rio Frio e, do sul, com            casa da cororaria.'}, {'para': 'Confronta, do norte, com casa foreira à comenda de Rio Frio.'}, {'para': 'O enfiteuta herdara de seus pais, João de    Barros e Francisca            Pereira.'}, {'para': 'Confronta, do sul, com a casa n.º 9, foreira à obra da Sé.'}, {'para': 'Pertencera a Manuel Gomes de    Mascarenhas.'}, {'para': 'É foreira à obra da Sé, à qual paga 2 galinhas. Está emprazada a Maria da Cunha, viúva de Luís Moreira.'}, {'para': 'O censo é pago por Miguel Soares,            sapateiro.'}, {'para': 'Confronta, so sul, com casa foreira à cororaria.'}, {'para': 'Entre os anos de 1509 e 1561 o n.º 13 esteve            unido a esta casa, constituindo uma só morada, com serventia, pelo n.º 4, da    Rua da Vielinha. Desta casa,            situada na «agiela da rua», foram feitas diversas escrituras à face do prazo            principal depois de 1686.'}, {'para': 'O prao é constituído por uma casa situada na agiela da Rua da Vielinha, (a que corresponde o n.º            5) e da qual, a partir do ano de 1686, foram feitas várias            escrituras de emprazamento.'}, {'para': 'Esta casa é foreira à obra da Sé e encontra-se emprazada a Simão da Costa, sapateiro, casado com Antónia Rodrigues. Paga de foro 340            reis.'}, {'para': 'Até 1515 faziam parte deste prazo os nº.1 e 3 da Rua da Vielinha.'}, {'para': 'O censo é pago por José Rodrigues            Zenha.'}, {'para': 'No ano de 1679 foi-lhe incorporada uma cozinha pertencente ao            n.º 2.'}, {'para': 'O foro é respeitante à cozinha, dado que o resto da casa não pertence ao            cabido.'}]</p>
+        </div>
+
+        <script>
+        function openTab(cityName) {
+        var i;
+        var x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        document.getElementById(cityName).style.display = "block";  
+        }
+        </script>
+
+    </body>
+
+    </html>
+    

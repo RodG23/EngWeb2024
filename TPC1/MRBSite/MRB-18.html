@@ -1,0 +1,51 @@
+
+    <!DOCTYPE html> 
+    <html>
+
+        <head>
+            <title>Rua 18</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta charset="utf-8"/> 
+            <link rel="stylesheet" href="w3.css"> 
+        </head>
+
+    <body>
+
+        <div class="w3-container">
+        </div>
+
+        <div class="w3-bar w3-blue-gray">
+        <button class="w3-bar-item w3-button" onclick="openTab('London')">Imagens - Atualidade</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens - Esquiços</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Tokyo')">Descrição</button>
+        </div>
+
+        <div id="London" class="w3-container city">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+        </div>
+
+        <div id="Paris" class="w3-container city" style="display:none">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p> 
+        </div>
+
+        <div id="Tokyo" class="w3-container city" style="display:none">
+        <p>[{'para': '            Artéria secundária, de origem romana, ligava a rua das Travessas com a rua de Maximinos.         '}, {'para': '            Aberta em data indeterminada da Idade Média, tinha, em 1750, uma estranha feição pelo aspecto cego que lhe era dado pelas portadas de madeira que protegiam 83,5%            de todas as suas janelas.        '}, {'para': '            Com casas de aspeto pobre, muitas delas sobradadas, só nos gavetos apresentava construções mais ricas. Curioso é, contudo, o enorme bloco, de empena e telhado comuns,            que ocupa quase toda a metade Norte do lado Nascente da rua e quase lembra um prédio de rendimento dos nossos dias.        '}, {'para': '            Chamada primeiro de Triparia, devido ao tipo de carne que aqui se vendia, passou            a partir de 1593 a ser conhecida pelo nome actual de rua das Chagas.        '}, {'para': '            Hoje está bastante alterada. Com o alargamento das ruas Verde, de Maximinos            e das Travessas, muitos dos seus prédios foram destruídos, principalmente os situados no lado Poente e no extremo Norte do lado oposto. Assim a rua foi muito encurtada e deixou de desembocar na rua de Maximinos, passando a ter o seu limite na rua D. Frei Caetano Brandão. A zona que não foi mexida, mantém, contudo, a sua feição arcaica.        '}, {'para': '            Das 10 casas do lado Nascente e 13 do Poente, são prazos do Cabido 5 e 3 respetivamente.        '}, {'para': '            A enfiteuta é filha do Dr. Manuel Gomes da Costa.        '}, {'para': '            A serventia dá-se pelo n.º 8 da Rua de Maximinos.         '}, {'para': '            Confronta, do norte, com casa foreira à Igreja de Santiado da Cividade.        '}, {'para': '            Pertence ao n.º 8 da Rua de Maximinos, para onde tem a frontaria e serventia            principais.        '}, {'para': '            Confronta do sul com casa foreira à Mitra.         '}, {'para': '            Confronta, do norte, com casa foreira ao Hospital de Real e, do sul,             com casa foreira ao Hospital de S. Marcos.         '}, {'para': '            Entre os anos de 1508 e 1597 a casa n.º 7 esteve             unida a este prazo.        '}, {'para': '            O enfiteuta é filho de António Pereira.        '}, {'para': '           Confronta, do sul, com casa foreira ao Hospital de S. Marcos.         '}, {'para': '            O enfiteuta é filho de Bento Soares. As casas encontram-se unidas, num só             prazo, desde o ano de 1602.        '}, {'para': '            Corresponde ao n.º 10 da Rua de Maximinos, para onde tem a frontaria            e serventia principais.        '}]</p>
+        </div>
+
+        <script>
+        function openTab(cityName) {
+        var i;
+        var x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        document.getElementById(cityName).style.display = "block";  
+        }
+        </script>
+
+    </body>
+
+    </html>
+    

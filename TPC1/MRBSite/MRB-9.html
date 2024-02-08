@@ -1,0 +1,51 @@
+
+    <!DOCTYPE html> 
+    <html>
+
+        <head>
+            <title>Rua 9</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta charset="utf-8"/> 
+            <link rel="stylesheet" href="w3.css"> 
+        </head>
+
+    <body>
+
+        <div class="w3-container">
+        </div>
+
+        <div class="w3-bar w3-blue-gray">
+        <button class="w3-bar-item w3-button" onclick="openTab('London')">Imagens - Atualidade</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Paris')">Imagens - Esquiços</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Tokyo')">Descrição</button>
+        </div>
+
+        <div id="London" class="w3-container city">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+        </div>
+
+        <div id="Paris" class="w3-container city" style="display:none">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p> 
+        </div>
+
+        <div id="Tokyo" class="w3-container city" style="display:none">
+        <p>[{'para': "            Rua ampla, de boas e grandes casas de pedra, aberta por D. Diogo de Sousa: «Fez a rua de S. Marcos, a qual é da Cappella maior da Sé até a porta do dito S. Marcos; comprou muitas casas acerca da Sé para fazer a dita rua e quintaes atraz d'ellas porque tudo era cerrado de casas e de quintaes e não havia ahi rua nenhuma...»        "}, {'para': '            Esta rua é uma das mais importantes obras urbanísticas de D. Diogo de Sousa. Ao ligar as traseiras da Sé com a porta de S. João, este arcebispo não se limitou a permitir um maior ângulo de visão para a belíssima capela mor da Sé, também obra sua; acima de tudo o que esta artéria representa é um violento abanão na estrutura urbana, pois que será ampla e de bons prédios, grandes e de pedra; e, principalmente, permitirá o abrir a cidade ao exterior, porque continuava pelo Campo dos Remédios e Granginhos em direcção            à rua da Ponte de Guimarães.        '}, {'para': '            Nela se fixaria a família dos Coimbras — família que acompanhou D. Diogo na sua vinda para Braga — em casa hoje reconstruída noutro local e desenhada por João de Castilho; os Paiva Marinho, na notável casa dos Paivas, riscada em finais do séc. XVI por alguém que passou            por Florença e procurou transplantar um pouco da arquitectura do Palácio Pitti; a irmã do Cónego Francisco Pacheco Pereira na grande casa do Passadiço; e os Lagos e os Antões Pereira em casas mais simples, mas não menos belas, que no Mappa se vêem com os nºs 9 e 10.        '}]</p>
+        </div>
+
+        <script>
+        function openTab(cityName) {
+        var i;
+        var x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        document.getElementById(cityName).style.display = "block";  
+        }
+        </script>
+
+    </body>
+
+    </html>
+    
