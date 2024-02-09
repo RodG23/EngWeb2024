@@ -3,8 +3,8 @@ import parse
 def chaveOrd(rua):
     return rua['meta']['nome']
 
-#bd = parse.parse("/home/rod/Desktop/EngWeb2024/TPC1/MapaRuas-materialBase/texto")
-bd = parse.parse('C:/Users/Utilizador/Desktop/UM/EngWeb2024/TPC1/MapaRuas-materialBase/texto')
+bd = parse.parse("/home/rod/Desktop/EngWeb2024/TPC1/MapaRuas-materialBase/texto")
+#bd = parse.parse('C:/Users/Utilizador/Desktop/UM/EngWeb2024/TPC1/MapaRuas-materialBase/texto')
 
 bd.sort(key=chaveOrd)
 

@@ -1,8 +1,8 @@
 import parse
 import os
 
-#bd = parse.parse("/home/rod/Desktop/EngWeb2024/TPC1/MapaRuas-materialBase/texto")
-bd = parse.parse('C:/Users/Utilizador/Desktop/UM/EngWeb2024/TPC1/MapaRuas-materialBase/texto')
+bd = parse.parse("/home/rod/Desktop/EngWeb2024/TPC1/MapaRuas-materialBase/texto")
+#bd = parse.parse('C:/Users/Utilizador/Desktop/UM/EngWeb2024/TPC1/MapaRuas-materialBase/texto')
 
 for e in bd:
     f = open('MRBSite/MRB-'+str(e['meta']['número'])+'.html', 'w', encoding='utf-8')
