@@ -2,7 +2,7 @@ import json
 
 def read_json_file(file_path):
     try:
-        with open(file_path, 'r') as file:
+        with open(file_path, 'r', encoding='utf-8') as file:
             json_objects = [json.loads(line) for line in file]
     
     except FileNotFoundError:
@@ -12,6 +12,17 @@ def read_json_file(file_path):
 
     return json_objects
 
+def verificar_entradas(registo):
+    parametros_necessarios = ["_id", "title", "year", "cast", "genres"]
+
+    for parametro in parametros_necessarios:
+        if parametro not in registo:
+            return False
+    return True
+
+def remover_entradas_incompletas(bd):
+    bd_completo = [registo for registo in bd if verificar_entradas(registo)]
+    return bd_completo
 
 def pertenceA(ator, atores):
     encontrado = False
@@ -68,6 +79,7 @@ def calc_generos(bd):
 
 file_path = 'filmes.json'
 myBD = read_json_file(file_path)
+myBD = remover_entradas_incompletas(myBD)
 filmes = calc_filmes(myBD)
 atores = calc_atores(myBD)
 generos = calc_generos(myBD)
@@ -78,5 +90,5 @@ novaBD = {
     "generos" : generos
 }
 
-f = open("bd.json",'w')
-json.dump(novaBD, f, indent=2)
+with open("bd.json", 'w') as f:
+    json.dump(novaBD, f, indent=2)
