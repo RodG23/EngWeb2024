@@ -1,0 +1,26 @@
+extends layout 
+
+block content
+    .w3-card-4
+        header.w3-container.w3-teal
+            h1 Compositor #{compositor.id}
+
+        .w3-container
+            ul.w3-ul.w3-card-4(style="width:50%")
+                li
+                    b Nome: #{compositor.nome}
+                li
+                    b Id: #{compositor.id}
+                li
+                    b Bio: #{compositor.bio}
+                li
+                    b Data Nascimento: #{compositor.dataNasc}
+                li
+                    b Data Óbito: #{compositor.dataObito}
+                li
+                    b Período: #{compositor.periodo}
+        footer.w3-container.w3-teal
+            address
+                span [
+                a(href="/compositores") Voltar
+                span ]
