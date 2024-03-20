@@ -8,7 +8,5 @@
 ## Resumo do trabalho
 
 - Importar o dataset para o MongoBD;
-- Montar a API RESTful com a utilização do express, a qual realiza requisições ao mongoDB; 
-- Formular respostas ao cliente com interfaces html (resposta em json encontra-se em comentário);
-- Criar uma aplicação Web com as seguintes caraterísticas:
-    - CRUD sobre compositores;
+- Montar uma API RESTful com a utilização do express, a qual realiza requisições ao mongoDB e serve interfaces HTML;
+- Montar outra API CRUD sobre compositores que responde somente em JSON;
