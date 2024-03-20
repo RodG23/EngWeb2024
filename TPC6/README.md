@@ -9,4 +9,5 @@
 
 - Importar o dataset para o MongoBD;
 - Montar uma API RESTful com a utilização do express, a qual realiza requisições ao mongoDB e serve interfaces HTML;
-- Montar outra API CRUD sobre compositores que responde somente em JSON;
+- Montar outra API sobre compositores que responde somente em JSON;
+- Ambas implementam operações CRUD sobre compositores.
